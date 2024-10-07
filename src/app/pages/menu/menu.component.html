@@ -1,0 +1,25 @@
+<div class="page-content">
+    <div class="title">
+        <h1>Alfredo dos Frangos</h1>
+        <hr style="border: none; height: 1px; background-color: #FFFFFF;">
+    </div>
+    <div class="box-wrapper">
+        <ng-container *ngFor="let category of categories$ | async">
+            <div class="box" (click)="selectCategory(category.id)"
+                [ngClass]="{'category-selected': !!selectedCategory,
+                    'not-selected': !!selectedCategory && (selectedCategory.id !== category.id)
+                }">
+                <img
+                    [src]="category.img"
+                    width="100%"
+                    />
+                <div class="category"> {{ category.id }}</div>
+            </div>
+        </ng-container>
+    </div>
+  </div>
+<ng-container *ngIf="selectedCategory?.categories as subcategories">
+    <app-menu-item 
+        [items]="subcategories">
+    </app-menu-item>
+</ng-container>

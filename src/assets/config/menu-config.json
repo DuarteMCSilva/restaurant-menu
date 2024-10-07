@@ -1,0 +1,71 @@
+{
+    "categories": [
+        {
+            "id": "couvert",
+            "img": "http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg",
+            "categories": [
+                {
+                    "id": "pao",
+                    "img": "http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg",
+                    "desc": "Pão alentejano!",
+                    "price": 1.50
+                },
+                {
+                    "id": "manteiga",
+                    "desc": "",
+                    "price": 0.70
+                },
+                {
+                    "id": "pate-sardinha",
+                    "desc": "",
+                    "price": 1.10
+                },
+                {
+                    "id": "pate-atum",
+                    "desc": "",
+                    "price": 1.10
+                },
+                {
+                    "id": "maionese-alho",
+                    "desc": "",
+                    "price": 1.10
+                },
+                {
+                    "id": "azeitonas",
+                    "desc": "",
+                    "price": 1.20
+                },
+                {
+                    "id": "queijo-seco",
+                    "desc": "",
+                    "price": 3.50
+                }
+            ]
+        },
+        {
+            "id": "pratos-principais",
+            "name": "Pratos Principais",
+            "img": "https://res.cloudinary.com/tf-lab/image/upload/w_600,h_310,c_fill,g_auto:subject,q_auto,f_auto/restaurant/188af9c6-a68c-4e06-8a79-df4464d939a1/289ece26-0359-4533-9a86-e3e00e5c51bb.jpg"
+        },
+        {
+            "id": "bebidas",
+            "name": "Bebidas",
+            "img": "https://www.spoton.com/blog/content/images/size/w1200/2023/08/Mocktail--zero-proof-cocktails--and-different-non-alcoholic-drinks-1.jpeg"
+        },
+        {
+            "id": "sobremesas",
+            "name": "Sobremesas",
+            "img": "https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2023/02/1-20.jpg"
+        },
+        {
+            "id": "cafetaria",
+            "name": "Cafetaria",
+            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg"
+        },
+        {
+            "id": "acompanhamentos",
+            "name": "Acompanhamentos",
+            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg"
+        }
+    ]
+}
