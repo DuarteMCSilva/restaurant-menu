@@ -55,17 +55,120 @@
         {
             "id": "sobremesas",
             "name": "Sobremesas",
-            "img": "https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2023/02/1-20.jpg"
+            "img": "https://j6t2y8j5.rocketcdn.me/wp-content/uploads/2023/02/1-20.jpg",
+            "categories": [
+                {
+                    "id": "doce-casa",
+                    "img": "",
+                    "desc": "",
+                    "price": 3.50
+                },
+                {
+                    "id": "mousse-choc",
+                    "desc": "",
+                    "price": 3.50
+                },
+                {
+                    "id": "pudim",
+                    "desc": "",
+                    "price": 3.50
+                },
+                {
+                    "id": "misto-alg",
+                    "desc": "",
+                    "price": 4.80
+                },
+                {
+                    "id": "tarte-amendoa",
+                    "desc": "",
+                    "price": 4.80
+                },
+                {
+                    "id": "tarte-alfarroba",
+                    "desc": "",
+                    "price": 4.80
+                },
+                {
+                    "id": "d-rodrigo",
+                    "desc": "",
+                    "price": 4.80
+                },
+                {
+                    "id": "mini-gelado",
+                    "desc": "",
+                    "price": 2.00
+                }
+            ]
         },
         {
             "id": "cafetaria",
             "name": "Cafetaria",
-            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg"
+            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg",
+            "categories": [
+                {
+                    "id": "expresso",
+                    "img": "",
+                    "desc": "",
+                    "price": 1.00
+                },
+                {
+                    "id": "descafeinado",
+                    "desc": "",
+                    "price": 1.00
+                },
+                {
+                    "id": "abatanado",
+                    "desc": "",
+                    "price": 1.30
+                },
+                {
+                    "id": "cafe-duplo",
+                    "desc": "",
+                    "price": 1.80
+                },
+                {
+                    "id": "cafe-leite",
+                    "desc": "",
+                    "price": 1.60
+                }
+            ]
         },
         {
             "id": "acompanhamentos",
             "name": "Acompanhamentos",
-            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg"
+            "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg",
+            "categories":[
+                {
+                    "id": "salada-mista",
+                    "desc": "",
+                    "price": 3.50
+                },
+                {
+                    "id": "salada-alface",
+                    "desc": "",
+                    "price": 3.00
+                },
+                {
+                    "id": "salada-tomate",
+                    "desc": "",
+                    "price": 4.50
+                },
+                {
+                    "id": "salada-algarvia",
+                    "desc": "",
+                    "price": 7.50
+                },
+                {
+                    "id": "arroz",
+                    "desc": "",
+                    "price": 2.50
+                },
+                {
+                    "id": "batata-frita",
+                    "desc": "",
+                    "price": 2.50
+                }
+            ]
         }
     ]
 }
