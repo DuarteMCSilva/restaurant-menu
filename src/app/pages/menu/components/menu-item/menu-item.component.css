@@ -68,7 +68,6 @@ img {
 
 .menu-item-price {
     font-weight: 800;
-    width: 10px;
 }
 
 .menu-item-description {
@@ -94,7 +93,6 @@ img {
 
 .item-right span {
     display: flex;
-    align-self: flex-start;
 }
 
 .add-icon {

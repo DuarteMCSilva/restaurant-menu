@@ -32,9 +32,7 @@ export class MenuComponent implements OnInit {
     this.categories$.subscribe( (categories) => this.categories = categories );
   }
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void { }
 
   selectCategory(categoryName: string) {
     if(categoryName === this.selectedCategory?.id) {

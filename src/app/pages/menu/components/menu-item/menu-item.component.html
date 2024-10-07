@@ -2,6 +2,7 @@
     <ng-container *ngFor="let item of items">
         <div class="item">
             <img
+            *ngIf="item?.img?.length"
             [src]="item?.img ?? 'http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg'"
             width="200px"
             height="200px"
