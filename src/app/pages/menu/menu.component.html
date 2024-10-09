@@ -4,22 +4,22 @@
         <hr style="border: none; height: 1px; background-color: #FFFFFF;">
     </div>
     <div class="box-wrapper">
-        <ng-container *ngFor="let category of categories$ | async">
-            <div class="box" (click)="selectCategory(category.id)"
-                [ngClass]="{'category-selected': !!selectedCategory,
-                    'not-selected': !!selectedCategory && (selectedCategory.id !== category.id)
+        <ng-container *ngFor="let productFamily of productFamilies$ | async">
+            <div class="box" (click)="selectCategory(productFamily.id)"
+                [ngClass]="{'some-category-selected': !!selectedFamily,
+                    'not-selected': !!selectedFamily && (selectedFamily.id !== productFamily.id)
                 }">
                 <img
-                    [src]="category.img"
+                    [src]="productFamily.img"
                     width="100%"
                     />
-                <div class="category"> {{ category.id }}</div>
+                <div class="category"> {{ productFamily.id }}</div>
             </div>
         </ng-container>
     </div>
   </div>
-<ng-container *ngIf="selectedCategory?.categories as subcategories">
+<ng-container *ngIf="selectedFamily?.categories as categories">
     <app-menu-item 
-        [categories]="subcategories">
+        [categories]="categories">
     </app-menu-item>
 </ng-container>

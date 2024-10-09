@@ -41,6 +41,7 @@ hr {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    transition-duration: 0.4s;
 }
 
 .box:hover {
@@ -71,9 +72,9 @@ img {
     font-size: 1.2rem;
 }
 
-.category-selected {
-    width: 160px;
-    height: 80px;
+.some-category-selected {
+    width: min(160px, 25vw);
+    height: min(80px, 8vh);
 }
 
 .not-selected {

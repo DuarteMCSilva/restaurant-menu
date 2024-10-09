@@ -20,26 +20,26 @@ interface Response {
 })
 export class MenuComponent implements OnInit {
 
-  public categories$: Observable<ProductFamily[]> = new Observable()
+  public productFamilies$: Observable<ProductFamily[]> = new Observable();
 
-  public categories: ProductFamily[] = [];
+  public productFamilies: ProductFamily[] = [];
 
-  public selectedCategory?: ProductFamily = undefined;
+  public selectedFamily?: ProductFamily = undefined;
 
   constructor(private httpClient: HttpClient) {
-    this.categories$ = this.httpClient.get<Response>('assets/config/menu-config.json')
+    this.productFamilies$ = this.httpClient.get<Response>('assets/config/menu-config.json')
       .pipe( map( (response) => response.families) );
-    this.categories$.subscribe( (categories) => this.categories = categories );
+    this.productFamilies$.subscribe( (categories) => this.productFamilies = categories );
   }
 
   ngOnInit(): void { }
 
   selectCategory(categoryName: string) {
-    if(categoryName === this.selectedCategory?.id) {
-      this.selectedCategory = undefined;
+    if(categoryName === this.selectedFamily?.id) {
+      this.selectedFamily = undefined;
       return
     }
 
-    this.selectedCategory = this.categories.find( ( category ) => category.id === categoryName);
+    this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
   }
 }
