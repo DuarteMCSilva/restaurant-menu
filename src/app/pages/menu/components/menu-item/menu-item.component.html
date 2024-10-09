@@ -1,20 +1,26 @@
-<div class="box-wrapper">
-    <ng-container *ngFor="let item of items">
-        <div class="item">
-            <img
-            *ngIf="item?.img?.length"
-            [src]="item?.img ?? 'http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg'"
-            width="200px"
-            height="200px"
-            />
-            <div class="item-detail">
-                <span class="menu-item-name">{{ item.id }}</span>
-                <p class="menu-item-description">Rich and moist chocolate cake with a ganache topping.</p>
+<ng-container *ngFor="let category of categories">
+    <div class="category-header">
+        <h3> {{ category.id }}</h3>
+        <hr style="border: none; height: 1px; background-color: #FFFFFF;">
+    </div>
+    <div class="box-wrapper">
+        <ng-container *ngFor="let item of category.items">
+            <div class="item">
+                <img
+                *ngIf="item?.img?.length"
+                [src]="item?.img ?? 'http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg'"
+                width="200px"
+                height="200px"
+                />
+                <div class="item-detail">
+                    <span class="menu-item-name">{{ item.id }}</span>
+                    <p class="menu-item-description">Rich and moist chocolate cake with a ganache topping.</p>
+                </div>
+                <div class="item-right">
+                    <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
+                    <img class="add-icon" src="assets/icons/add-icon.svg" [alt]="item.id">
+                </div>
             </div>
-            <div class="item-right">
-                <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
-                <img class="add-icon" src="assets/icons/add-icon.svg" [alt]="item.id">
-            </div>
-        </div>
-    </ng-container>
-</div>
+        </ng-container>
+    </div>
+</ng-container>

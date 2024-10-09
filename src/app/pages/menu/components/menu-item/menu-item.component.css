@@ -1,31 +1,25 @@
-#body {
-    height: 100vh;
+:host {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.page-content {
+.category-header {
+    margin: 0 70px;
+    padding: 20px;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 50px;
+    align-items: flex-end;
+    align-self: flex-end;
 }
 
-.title {
-    margin-bottom: 10vh;
-    width: 85vw;
-    text-align: center;
-}
-
-h1 {
+h3 {
     color: white !important;
 }
 
 hr {
     width: 100%;
-}
-
-:host {
-    display: flex;
-    justify-content: center;
 }
 
 .box-wrapper {

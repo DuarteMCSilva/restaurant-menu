@@ -1,5 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+export interface Category {
+  id: string,
+  items: Item[]
+}
+
 export interface Item {
   id: string,
   price: string,
@@ -13,7 +18,7 @@ export interface Item {
 })
 export class MenuItemComponent implements OnInit {
 
-  @Input() items: Item[] = [];
+  @Input() categories: Category[] = [];
 
   constructor() { }
 

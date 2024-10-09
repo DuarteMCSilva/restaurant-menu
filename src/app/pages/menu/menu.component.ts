@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Item } from './components/menu-item/menu-item.component';
+import { Category, Item } from './components/menu-item/menu-item.component';
 
-interface Category {
+interface ProductFamily {
   id: string,
   img: string,
-  categories?: Item[]
+  categories?: Category[]
 }
 
 interface Response {
-  categories: Category[]
+  families: ProductFamily[]
 }
 
 @Component({
@@ -20,15 +20,15 @@ interface Response {
 })
 export class MenuComponent implements OnInit {
 
-  public categories$: Observable<Category[]> = new Observable()
+  public categories$: Observable<ProductFamily[]> = new Observable()
 
-  public categories: Category[] = [];
+  public categories: ProductFamily[] = [];
 
-  public selectedCategory?: Category = undefined;
+  public selectedCategory?: ProductFamily = undefined;
 
   constructor(private httpClient: HttpClient) {
     this.categories$ = this.httpClient.get<Response>('assets/config/menu-config.json')
-      .pipe( map( (response) => response.categories) );
+      .pipe( map( (response) => response.families) );
     this.categories$.subscribe( (categories) => this.categories = categories );
   }
 
@@ -42,5 +42,4 @@ export class MenuComponent implements OnInit {
 
     this.selectedCategory = this.categories.find( ( category ) => category.id === categoryName);
   }
-
 }
