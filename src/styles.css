@@ -1,4 +1,25 @@
+body {
+    --background-color: #1b181d;
+    --text-color: #dee2e6;
+    --transition-duration: 0.5s;
+}
+
 #body {
-    background-color: #1b181d;
+    background-color: var(--background-color)  !important ;
     height: 100vh;
+}
+
+
+h1, h3, p {
+    color: var(--text-color); 
+}
+
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: var(--text-color);
+}
+
+.hidden {
+    display: none;
 }

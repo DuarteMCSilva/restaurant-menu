@@ -1,8 +1,9 @@
 <div class="page-content">
     <div class="title">
         <h1>Alfredo dos Frangos</h1>
-        <hr style="border: none; height: 1px; background-color: #FFFFFF;">
+        <hr>
     </div>
+    <p [ngClass]="{'hidden': !!selectedFamily}"> Escolha uma categoria: </p>
     <div class="box-wrapper">
         <ng-container *ngFor="let productFamily of productFamilies$ | async">
             <div class="box" (click)="selectCategory(productFamily.id)"

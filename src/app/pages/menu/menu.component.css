@@ -13,10 +13,6 @@
     margin: 20px
 }
 
-h1 {
-    color: white !important;
-}
-
 hr {
     width: 100%;
 }
@@ -41,7 +37,8 @@ hr {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    transition-duration: 0.4s;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: ease-in-out;
 }
 
 .box:hover {
