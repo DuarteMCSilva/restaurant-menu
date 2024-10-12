@@ -1,6 +1,6 @@
 <ng-container *ngFor="let category of categories">
     <div class="category-header">
-        <h3> {{ category.id }}</h3>
+        <h3> {{ category.id | translate }}</h3>
         <hr>
     </div>
     <div class="box-wrapper">
@@ -13,8 +13,8 @@
                 height="200px"
                 />
                 <div class="item-detail">
-                    <span class="menu-item-name">{{ item.id }}</span>
-                    <p class="menu-item-description">Rich and moist chocolate cake with a ganache topping.</p>
+                    <span class="menu-item-name">{{ item.id | translate }}</span>
+                    <p class="menu-item-description"> {{ (item.id + '.desc') | translate }} </p>
                 </div>
                 <div class="item-right">
                     <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>

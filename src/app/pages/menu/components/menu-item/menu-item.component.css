@@ -37,6 +37,7 @@ hr {
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     overflow: hidden;
     position: relative;
     border: 1px solid var(--border-color);
@@ -76,7 +77,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
     width: 100px;
     padding: 10px;

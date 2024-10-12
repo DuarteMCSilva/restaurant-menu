@@ -9,7 +9,6 @@
                     "items": [
                         {
                             "id": "pao",
-                            "img": "http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg",
                             "price": 1.50
                         },
                         {
@@ -55,25 +54,32 @@
                     "id": "carne",
                     "items": [
                         {
-                            "id": "frango",
+                            "id": "frango-guia",
                             "img": "",
-                            "desc": "",
+                            "desc": true,
                             "price": 3.50
                         },
                         {
-                            "id": "bife",
-                            "desc": "",
+                            "id": "bife-casa",
+                            "desc": true,
+                            "price": 3.50
+                        },
+                        {
+                            "id": "bife-grelh",
+                            "desc": true,
+                            "acomp": ["batata-frita"],
                             "price": 3.50
                         },
                         {
                             "id": "borrego",
-                            "desc": "",
+                            "desc": true,
                             "price": 3.50
                         },
                         {
                             "id": "strogonoff",
-                            "desc": "",
-                            "price": 4.80
+                            "desc": true,
+                            "price": 4.80,
+                            "indisp": true
                         }
                     ]
                 },
@@ -110,12 +116,11 @@
                     ]
                 },
                 {
-                    "id": "menu criança",
+                    "id": "kids",
                     "items": [
                         {
                             "id": "strogonoff",
                             "img": "",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
@@ -147,6 +152,11 @@
                             "price": 3.50
                         },
                         {
+                            "id": "salada-algarvia",
+                            "desc": "",
+                            "price": 7.50
+                        },
+                        {
                             "id": "salada-alface",
                             "desc": "",
                             "price": 3.00
@@ -156,18 +166,34 @@
                             "desc": "",
                             "price": 4.50
                         },
-                        {
-                            "id": "salada-algarvia",
-                            "desc": "",
-                            "price": 7.50
-                        },
+                        
                         {
                             "id": "arroz",
                             "desc": "",
                             "price": 2.50
                         },
                         {
+                            "id": "feijao",
+                            "desc": "",
+                            "price": 2.50
+                        },
+                        {
                             "id": "batata-frita",
+                            "desc": "",
+                            "price": 2.50
+                        },
+                        {
+                            "id": "batata-murro",
+                            "desc": "",
+                            "price": 2.50
+                        },
+                        {
+                            "id": "legumes-salt",
+                            "desc": "",
+                            "price": 2.50
+                        },
+                        {
+                            "id": "legumes-coz",
                             "desc": "",
                             "price": 2.50
                         }
@@ -195,14 +221,9 @@
                             "price": 3.50
                         },
                         {
-                            "id": "sprite",
+                            "id": "nestea",
                             "desc": "",
                             "price": 3.50
-                        },
-                        {
-                            "id": "ice-tea",
-                            "desc": "",
-                            "price": 4.80
                         }
                     ]
                 },

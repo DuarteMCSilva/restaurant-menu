@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Category } from './components/menu-item/menu-item.component';
+import { TranslateService } from '@ngx-translate/core';
 
 interface ProductFamily {
   id: string,
@@ -26,7 +27,9 @@ export class MenuComponent implements OnInit {
 
   public selectedFamily?: ProductFamily = undefined;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(
+    private httpClient: HttpClient,
+    public translateService: TranslateService) {
     this.productFamilies$ = this.httpClient.get<Response>('assets/config/menu-config.json')
       .pipe( map( (response) => response.families) );
     this.productFamilies$.subscribe( (categories) => this.productFamilies = categories );
@@ -35,11 +38,15 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void { }
 
   selectCategory(categoryName: string) {
-    if(categoryName === this.selectedFamily?.id) {
-      this.selectedFamily = undefined;
-      return
-    }
+      if(categoryName === this.selectedFamily?.id) {
+        this.selectedFamily = undefined;
+        return
+      }
 
-    this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
+      this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
+  }
+
+  changeLang(lang: string) {
+      this.translateService.use(lang);
   }
 }

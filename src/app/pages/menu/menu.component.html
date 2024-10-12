@@ -1,3 +1,10 @@
+<div class="language">
+    <img class="flag"
+        *ngFor="let lang of translateService.getLangs()" 
+        (click)="changeLang(lang)" 
+        [src]="'assets/icons/flags/flag-'+lang+'.svg'" 
+        [alt]="lang">
+</div>
 <div class="page-content">
     <div class="title">
         <h1>Alfredo dos Frangos</h1>
@@ -14,7 +21,7 @@
                     [src]="productFamily.img"
                     width="100%"
                     />
-                <div class="category"> <p style="color: var(--color-orange-brown-100)"> {{ productFamily.id }} </p></div>
+                <div class="category"> <p style="color: var(--color-orange-brown-100)"> {{ productFamily.id | translate }} </p></div>
             </div>
         </ng-container>
     </div>
