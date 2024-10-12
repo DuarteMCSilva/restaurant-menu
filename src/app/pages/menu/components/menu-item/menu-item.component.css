@@ -14,10 +14,6 @@
     align-self: flex-end;
 }
 
-h3 {
-    color: white !important;
-}
-
 hr {
     width: 100%;
 }
@@ -38,14 +34,14 @@ hr {
     height: max(12vh, 12vw);
     min-height: max-content;
     max-height: 150px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     display: flex;
     align-items: center;
     overflow: hidden;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     gap: 10px;
-    background-color: rgba(224, 110, 3, 0.95);
+    background-color: var(--card-color);
 }
 
 img {
@@ -53,11 +49,12 @@ img {
     z-index: 1;
     height: 100%;
     width: max(12vh, 12vw);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
 }
 
 .menu-item-name {
-    font-size: 18px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .menu-item-price {
@@ -66,7 +63,7 @@ img {
 
 .menu-item-description {
     font-size: 14px;
-    color: #666;
+    color: var(--color-green);
     margin-top: 5px;
 }
 

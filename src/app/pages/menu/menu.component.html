@@ -7,14 +7,14 @@
     <div class="box-wrapper">
         <ng-container *ngFor="let productFamily of productFamilies$ | async">
             <div class="box" (click)="selectCategory(productFamily.id)"
-                [ngClass]="{'some-category-selected': !!selectedFamily,
+                [ngClass]="{
                     'not-selected': !!selectedFamily && (selectedFamily.id !== productFamily.id)
                 }">
                 <img
                     [src]="productFamily.img"
                     width="100%"
                     />
-                <div class="category"> {{ productFamily.id }}</div>
+                <div class="category"> <p style="color: var(--color-orange-brown-100)"> {{ productFamily.id }} </p></div>
             </div>
         </ng-container>
     </div>

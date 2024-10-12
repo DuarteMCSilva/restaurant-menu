@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Category, Item } from './components/menu-item/menu-item.component';
+import { Category } from './components/menu-item/menu-item.component';
 
 interface ProductFamily {
   id: string,

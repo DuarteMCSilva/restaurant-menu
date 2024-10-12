@@ -1,7 +1,51 @@
 body {
-    --background-color: #1b181d;
-    --text-color: #dee2e6;
+    --background-color: var(--color-orange-200);
+    --text-color: var(--color-orange-brown-300);
+    --card-color: var(--color-orange-300);
+    --border-color: var(--color-orange-brown-300);
+    --border-radius: 5px;
+    --inverted-text-color: var(--color-grey-600);
     --transition-duration: 0.5s;
+
+    --color-grey-50: hsl(265, 55%, 96%);
+    --color-grey-100: hsl(265, 19%, 88%);
+    --color-grey-200: hsl(265, 7%, 70%);
+    --color-grey-300: hsl(265, 6%, 66%);
+    --color-grey-400: hsl(265, 4%, 57%);
+    --color-grey-500: hsl(265, 3%, 53%);
+    --color-grey-600: hsl(265, 4%, 42%);
+    --color-grey-700: hsl(265, 4%, 31%);
+    --color-grey-800: hsl(276, 5%, 20%);
+    --color-grey-900: hsl(280, 5%, 13%);
+
+    --color-orange-100: #FFF3E0;  /* Very light orange */
+    --color-orange-200: #FFE0B2;  /* Light orange */
+    --color-orange-300: #FFCC80;  /* Soft orange */
+    --color-orange-400: #FFB74D;  /* Mid-light orange */
+    --color-orange-500: #FFA726;  /* Medium orange */
+    --color-orange-600: #FB8C00;  /* Rich orange */
+    --color-orange-700: #F57C00;  /* Dark orange */
+    --color-orange-800: #EF6C00;  /* Deeper orange */
+    --color-orange-900: #E65100;  /* Very dark orange */
+
+     --color-green: #1b4408;
+
+    --color-orange-brown-100: #d86d2b;  /* Light rustic orange */
+    --color-orange-brown-200: #c46221;  /* Muted orange-brown */
+    --color-orange-brown-300: #ad5419;  /* Rich orange-brown (main color) */
+    --color-orange-brown-400: #944711;  /* Deep rusty orange */
+    --color-orange-brown-500: #7b3b0a;  /* Burnt sienna */
+    --color-orange-brown-600: #62300b;  /* Dark earthy brown */
+    --color-orange-brown-700: #4a2406;  /* Deep mahogany brown */
+    --color-orange-brown-800: #371a04;  /* Almost blackened brown */
+    --color-primary-500: #ad5419;
+
+    --color-success-100: #a2f0bc;
+    --color-success-500: #12bd4b;
+
+    --color-error-100: #f1acc9;
+    --color-error-500: #a10c4a;
+
 }
 
 #body {
@@ -10,14 +54,15 @@ body {
 }
 
 
-h1, h3, p {
-    color: var(--text-color); 
+h1, h3, p , span {
+    color: var(--text-color);
+    font-family: "Times New Roman", Times, serif;
 }
 
 hr {
     border: none; 
-    height: 1px; 
-    background-color: var(--text-color);
+    height: 2px; 
+    background-color: var(--color-orange-brown-400);
 }
 
 .hidden {
