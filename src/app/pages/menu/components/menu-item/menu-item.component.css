@@ -45,7 +45,11 @@ hr {
     background-color: var(--card-color);
 }
 
-img {
+.minimal {
+    height: max-content;
+}
+
+img.picture {
     object-fit: cover;
     z-index: 1;
     height: 100%;
@@ -59,6 +63,8 @@ img {
 }
 
 .menu-item-price {
+    display: flex;
+    align-items: center;
     font-weight: 800;
 }
 
@@ -83,6 +89,11 @@ img {
     padding: 10px;
 }
 
+.item-right-minimal {
+    display: flex;
+    gap: 10px;
+}
+
 .item-right span {
     display: flex;
 }
@@ -90,6 +101,10 @@ img {
 .add-icon {
     width: 36px;
     height: 36px;
+}
+
+.minimal .add-icon {
+    margin-right: 10px;
 }
 
 .add-icon:hover {

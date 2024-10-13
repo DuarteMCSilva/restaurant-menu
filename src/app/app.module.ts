@@ -9,6 +9,7 @@ import { MenuItemComponent } from './pages/menu/components/menu-item/menu-item.c
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { OptionalFieldTranslatePipe } from './pipes/app-translate.pipe';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,7 +26,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MenuComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    OptionalFieldTranslatePipe
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,8 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 
 export interface Category {
   id: string,
-  items: Item[]
+  items: Item[],
+  detail: boolean
 }
 
 export interface Item {

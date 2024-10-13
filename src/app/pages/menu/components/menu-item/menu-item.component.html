@@ -4,25 +4,46 @@
         <hr>
     </div>
     <div class="box-wrapper">
-        <ng-container *ngFor="let item of category.items">
-            <div class="item" [ngClass]="{'disabled': item.indisp}">
-                <img
-                *ngIf="item?.img?.length"
-                [src]="item?.img ?? 'http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg'"
-                width="200px"
-                height="200px"
-                />
-                <div class="item-detail">
-                    <span class="menu-item-name">{{ item.id | translate }}</span>
-                    <p class="menu-item-description"> {{ (item.id + '.desc') | translate }} </p>
-                </div>
-                <div class="item-right">
-                    <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
-                    <img class="add-icon" 
-                        [ngClass]="{'disabled': item.indisp}" 
-                        src="assets/icons/add-icon.svg" [alt]="item.id">
-                </div>
-            </div>
+        <ng-container *ngFor="let item of category.items; trackB" >
+            <ng-container 
+                [ngTemplateOutlet]="category.detail ? detailItem : minimalItem"
+                [ngTemplateOutletContext]="{item, id: item.id}">
+            </ng-container>
         </ng-container>
     </div>
 </ng-container>
+
+<ng-template #minimalItem let-item="item" let-id="id">
+    <div [id]="id" class="item minimal" [ngClass]="{'disabled': item.indisp}">
+        <div class="item-detail">
+            <span class="menu-item-name">{{ item.id | translate }}</span>
+        </div>
+        <div class="item-right-minimal">
+            <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
+            <img class="add-icon" 
+                [ngClass]="{'disabled': item.indisp}" 
+                src="assets/icons/add-icon.svg" [alt]="item.id">
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #detailItem let-item="item" let-id="id">
+    <div class="item" [ngClass]="{'disabled': item.indisp}">
+        <img class="picture"
+        *ngIf="item.img?.length"
+        [src]="item.img"
+        width="200px"
+        height="200px"
+        />
+        <div class="item-detail">
+            <span class="menu-item-name">{{ item.id | translate }}</span>
+            <p class="menu-item-description"> {{ (item.id + '.desc') | optTranslate }} </p>
+        </div>
+        <div class="item-right">
+            <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
+            <img class="add-icon" 
+                [ngClass]="{'disabled': item.indisp}" 
+                src="assets/icons/add-icon.svg" [alt]="item.id">
+        </div>
+    </div>
+</ng-template>

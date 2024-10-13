@@ -13,32 +13,26 @@
                         },
                         {
                             "id": "manteiga",
-                            "desc": "",
                             "price": 0.70
                         },
                         {
                             "id": "pate-sardinha",
-                            "desc": "",
                             "price": 1.10
                         },
                         {
                             "id": "pate-atum",
-                            "desc": "",
                             "price": 1.10
                         },
                         {
                             "id": "maionese-alho",
-                            "desc": "",
                             "price": 1.10
                         },
                         {
                             "id": "azeitonas",
-                            "desc": "",
                             "price": 1.20
                         },
                         {
                             "id": "queijo-seco",
-                            "desc": "",
                             "price": 3.50
                         }
                     ]
@@ -52,32 +46,28 @@
             "categories": [
                 {
                     "id": "carne",
+                    "detail": true,
                     "items": [
                         {
                             "id": "frango-guia",
                             "img": "",
-                            "desc": true,
                             "price": 3.50
                         },
                         {
                             "id": "bife-casa",
-                            "desc": true,
                             "price": 3.50
                         },
                         {
                             "id": "bife-grelh",
-                            "desc": true,
                             "acomp": ["batata-frita"],
                             "price": 3.50
                         },
                         {
                             "id": "borrego",
-                            "desc": true,
                             "price": 3.50
                         },
                         {
                             "id": "strogonoff",
-                            "desc": true,
                             "price": 4.80,
                             "indisp": true
                         }
@@ -85,32 +75,30 @@
                 },
                 {
                     "id": "peixe",
+                    "detail": true,
                     "items": [
                         {
                             "id": "bacalhau",
                             "img": "",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "polvo",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "salmao",
-                            "desc": "",
                             "price": 3.50
                         }
                     ]
                 },
                 {
                     "id": "vegetariano",
+                    "detail": true,
                     "items": [
                         {
                             "id": "pene",
                             "img": "",
-                            "desc": "",
                             "price": 3.50,
                             "indisp": true
                         }
@@ -118,6 +106,7 @@
                 },
                 {
                     "id": "kids",
+                    "detail": true,
                     "items": [
                         {
                             "id": "strogonoff",
@@ -126,12 +115,10 @@
                         },
                         {
                             "id": "douradinhos",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "hamburguer",
-                            "desc": "",
                             "price": 3.50
                         }
                     ]
@@ -146,25 +133,22 @@
             "categories":[
                 {
                     "id": "saladas",
+                    "detail": true,
                     "items": [
                         {
                             "id": "salada-mista",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "salada-algarvia",
-                            "desc": "",
                             "price": 7.50
                         },
                         {
                             "id": "salada-alface",
-                            "desc": "",
                             "price": 3.00
                         },
                         {
                             "id": "salada-tomate",
-                            "desc": "",
                             "price": 4.50
                         }
                     ]
@@ -174,32 +158,26 @@
                     "items": [
                         {
                             "id": "arroz",
-                            "desc": "",
                             "price": 2.50
                         },
                         {
                             "id": "feijao",
-                            "desc": "",
                             "price": 2.50
                         },
                         {
                             "id": "batata-frita",
-                            "desc": "",
                             "price": 2.50
                         },
                         {
                             "id": "batata-murro",
-                            "desc": "",
                             "price": 2.50
                         },
                         {
                             "id": "legumes-salt",
-                            "desc": "",
                             "price": 2.50
                         },
                         {
                             "id": "legumes-coz",
-                            "desc": "",
                             "price": 2.50
                         }
                     ]
@@ -217,38 +195,32 @@
                         {
                             "id": "coca-cola",
                             "img": "",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "fanta",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "nestea",
-                            "desc": "",
                             "price": 3.50
                         }
                     ]
                 },
                 {
                     "id": "vinho",
+                    "detail": true,
                     "items": [
                         {
                             "id": "monte-velho",
-                            "img": "",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "muralhas",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "casal",
-                            "desc": "",
                             "price": 3.50
                         }
                     ]
@@ -261,46 +233,39 @@
             "categories": [
                 {
                     "id": "sobremesas",
+                    "detail": true,
                     "items": [
                         {
                             "id": "doce-casa",
                             "img": "",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "mousse-choc",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "pudim",
-                            "desc": "",
                             "price": 3.50
                         },
                         {
                             "id": "misto-alg",
-                            "desc": "",
                             "price": 4.80
                         },
                         {
                             "id": "tarte-amendoa",
-                            "desc": "",
                             "price": 4.80
                         },
                         {
                             "id": "tarte-alfarroba",
-                            "desc": "",
                             "price": 4.80
                         },
                         {
                             "id": "d-rodrigo",
-                            "desc": "",
                             "price": 4.80
                         },
                         {
                             "id": "mini-gelado",
-                            "desc": "",
                             "price": 2.00
                         }
                     ]
@@ -316,28 +281,22 @@
                     "items": [
                         {
                             "id": "expresso",
-                            "img": "",
-                            "desc": "",
                             "price": 1.00
                         },
                         {
                             "id": "descafeinado",
-                            "desc": "",
                             "price": 1.00
                         },
                         {
                             "id": "abatanado",
-                            "desc": "",
                             "price": 1.30
                         },
                         {
                             "id": "cafe-duplo",
-                            "desc": "",
                             "price": 1.80
                         },
                         {
                             "id": "cafe-leite",
-                            "desc": "",
                             "price": 1.60
                         }
                     ]
