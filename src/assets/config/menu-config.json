@@ -111,7 +111,8 @@
                             "id": "pene",
                             "img": "",
                             "desc": "",
-                            "price": 3.50
+                            "price": 3.50,
+                            "indisp": true
                         }
                     ]
                 },
@@ -144,7 +145,7 @@
             "img": "https://i1.wp.com/comohacercafe.com/wp-content/uploads/2020/03/espresso.jpeg",
             "categories":[
                 {
-                    "id": "acompanhamentos",
+                    "id": "saladas",
                     "items": [
                         {
                             "id": "salada-mista",
@@ -165,8 +166,12 @@
                             "id": "salada-tomate",
                             "desc": "",
                             "price": 4.50
-                        },
-                        
+                        }
+                    ]
+                },
+                {   
+                    "id": "acompanhamentos-outros",
+                    "items": [
                         {
                             "id": "arroz",
                             "desc": "",

@@ -1,11 +1,11 @@
-<ng-container *ngFor="let category of categories">
+<ng-container *ngFor="let category of filteredCategories">
     <div class="category-header">
         <h3> {{ category.id | translate }}</h3>
         <hr>
     </div>
     <div class="box-wrapper">
         <ng-container *ngFor="let item of category.items">
-            <div class="item">
+            <div class="item" [ngClass]="{'disabled': item.indisp}">
                 <img
                 *ngIf="item?.img?.length"
                 [src]="item?.img ?? 'http://turismodoalentejo.com.br/blog/wp-content/uploads/2018/03/pao_alentejano4.jpg'"
@@ -18,7 +18,9 @@
                 </div>
                 <div class="item-right">
                     <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
-                    <img class="add-icon" src="assets/icons/add-icon.svg" [alt]="item.id">
+                    <img class="add-icon" 
+                        [ngClass]="{'disabled': item.indisp}" 
+                        src="assets/icons/add-icon.svg" [alt]="item.id">
                 </div>
             </div>
         </ng-container>

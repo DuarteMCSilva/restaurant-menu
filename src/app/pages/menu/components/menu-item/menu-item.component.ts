@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 export interface Category {
   id: string,
@@ -8,7 +8,8 @@ export interface Category {
 export interface Item {
   id: string,
   price: string,
-  img?: string
+  img?: string,
+  indisp?: boolean
 }
 
 @Component({
@@ -16,13 +17,24 @@ export interface Item {
   templateUrl: './menu-item.component.html',
   styleUrls: ['./menu-item.component.css']
 })
-export class MenuItemComponent implements OnInit {
+export class MenuItemComponent implements OnInit, OnChanges {
 
   @Input() categories: Category[] = [];
+
+  public filteredCategories: Category[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes['categories']){
+      this.filteredCategories = this.categories.filter(this.checkCategoryHasAvailableItems);
+    }
+  }
+
+  private checkCategoryHasAvailableItems(category: Category){
+    return category.items.some(( item ) => !item.indisp )
+  }
 }
