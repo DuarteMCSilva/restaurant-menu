@@ -29,15 +29,17 @@
 
 <ng-template #detailItem let-item="item" let-id="id">
     <div class="item" [ngClass]="{'disabled': item.indisp}">
-        <img class="picture"
-        *ngIf="item.img?.length"
-        [src]="item.img"
-        width="200px"
-        height="200px"
-        />
-        <div class="item-detail">
-            <span class="menu-item-name">{{ item.id | translate }}</span>
-            <p class="menu-item-description"> {{ (item.id + '.desc') | optTranslate }} </p>
+        <div style="display: flex; height: 100%;">
+            <img class="picture"
+            *ngIf="item.img?.length"
+            [src]="item.img"
+            width="200px"
+            height="200px"
+            />
+            <div class="item-detail">
+                <span class="menu-item-name">{{ item.id | translate }}</span>
+                <p class="menu-item-description"> {{ (item.id + '.desc') | optTranslate }} </p>
+            </div>
         </div>
         <div class="item-right">
             <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>

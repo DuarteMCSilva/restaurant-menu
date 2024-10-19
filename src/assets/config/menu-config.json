@@ -206,9 +206,72 @@
                             "price": 3.50
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "vinhos",
+            "img": "https://www.spoton.com/blog/content/images/size/w1200/2023/08/Mocktail--zero-proof-cocktails--and-different-non-alcoholic-drinks-1.jpeg",
+            "categories": [
+                {
+                    "id": "tinto",
+                    "detail": true,
+                    "items": [
+                        {
+                            "id": "monte-velho",
+                            "img": "https://www.primedrinks.pt/media/11683/logo.jpg",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "muralhas",
+                            "img": "https://www.auchan.pt/dw/image/v2/BFRC_PRD/on/demandware.static/-/Sites-auchan-pt-master-catalog/default/dw806e92d3/images/hi-res/000022493_f5591bc6-a9d1-4b1e-936a-52b81c8a47cb.jpg",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "casal",
+                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
+                            "price": 3.50
+                        }
+                    ]
                 },
                 {
-                    "id": "vinho",
+                    "id": "branco",
+                    "detail": true,
+                    "items": [
+                        {
+                            "id": "monte-velho",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "muralhas",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "casal",
+                            "price": 3.50
+                        }
+                    ]
+                },
+                {
+                    "id": "verde",
+                    "items": [
+                        {
+                            "id": "coca-cola",
+                            "img": "",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "fanta",
+                            "price": 3.50
+                        },
+                        {
+                            "id": "nestea",
+                            "price": 3.50
+                        }
+                    ]
+                },
+                {
+                    "id": "rose",
                     "detail": true,
                     "items": [
                         {
