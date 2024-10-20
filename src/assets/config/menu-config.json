@@ -100,7 +100,7 @@
                             "id": "pene",
                             "img": "",
                             "price": 3.50,
-                            "indisp": false
+                            "indisp": true
                         }
                     ]
                 },

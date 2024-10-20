@@ -31,8 +31,8 @@ hr {
 }
 
 .item {
-    width: min(70vw, 450px);
-    height: max(12vh, 12vw);
+    width: min(80vw, 450px);
+    height: max(14vh, 12vw);
     min-height: max-content;
     max-height: 150px;
     border-radius: var(--border-radius);
@@ -48,18 +48,21 @@ hr {
 
 .minimal {
     height: max-content;
+    max-width: 350px;
 }
 
 img.picture {
     object-fit: cover;
     z-index: 1;
-    height: 100%;
-    width: max(12vh, 12vw);
+    height: min(24vw, 90%);
+    width: auto;
     border-radius: var(--border-radius);
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .menu-item-name {
-    font-size: 1rem;
+    font-size:  clamp(12px, 1.6vw, 20px);
     font-weight: bold;
 }
 
@@ -67,17 +70,20 @@ img.picture {
     display: flex;
     align-items: center;
     font-weight: 800;
+    font-size:  clamp(12px, 1.6vw, 20px);
 }
 
 .menu-item-description {
-    font-size: 14px;
+    font-size: clamp(10px, 1.5vw, 16px);
     color: var(--color-green);
     margin-top: 5px;
 }
 
 .item-detail {
     height: 100%;
-    padding: 10px
+    width: 100%;
+    padding: 10px;
+    min-width: 120px
 }
 
 .item-right {
@@ -86,13 +92,13 @@ img.picture {
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
-    width: 100px;
-    padding: 10px;
+    width: 50px;
+    padding: 10px 10px 10px 5px;
 }
 
 .item-right-minimal {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .item-right span {
