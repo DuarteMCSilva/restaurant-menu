@@ -45,7 +45,7 @@
             "categories": [
                 {
                     "id": "carne",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "frango-guia",
@@ -76,6 +76,10 @@
                             "price": 14.50
                         },
                         {
+                            "id": "rib-eye",
+                            "price": 20.50
+                        },
+                        {
                             "id": "borrego",
                             "acomp": ["batata-frita", "salada"],
                             "price": 15.00
@@ -93,7 +97,7 @@
                 },
                 {
                     "id": "peixe",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "bacalhau",
@@ -117,7 +121,7 @@
                 },
                 {
                     "id": "vegetariano",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "pene",
@@ -129,7 +133,7 @@
                 },
                 {
                     "id": "kids",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "strogonoff",
@@ -155,7 +159,7 @@
             "categories":[
                 {
                     "id": "saladas",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "salada-mista",
@@ -472,7 +476,7 @@
             "categories": [
                 {
                     "id": "sobremesas",
-                    "detail": true,
+                    "detail": false,
                     "items": [
                         {
                             "id": "doce-casa",
