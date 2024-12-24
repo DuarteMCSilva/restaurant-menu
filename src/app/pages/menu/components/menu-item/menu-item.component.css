@@ -71,6 +71,7 @@ img.picture {
     align-items: center;
     font-weight: 800;
     font-size:  clamp(12px, 1.6vw, 20px);
+    margin: 5px;
 }
 
 .menu-item-description {

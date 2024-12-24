@@ -21,6 +21,7 @@
         <div class="item-right-minimal">
             <span class="menu-item-price"> {{ item.price | currency: 'EUR' }} </span>
             <img class="add-icon" 
+                *ngIf="false"
                 [ngClass]="{'disabled': item.indisp}" 
                 src="assets/icons/add-icon.svg" [alt]="item.id">
         </div>
