@@ -1,15 +1,17 @@
 <ng-container *ngFor="let category of filteredCategories">
-    <div class="category-header">
-        <h3> {{ category.id | translate }}</h3>
-        <hr>
-    </div>
-    <div class="box-wrapper">
-        <ng-container *ngFor="let item of category.items; trackB" >
-            <ng-container 
-                [ngTemplateOutlet]="category.detail ? detailItem : minimalItem"
-                [ngTemplateOutletContext]="{item, id: item.id}">
+    <div class="category-wrapper">
+        <div class="category-header">
+            <h3> {{ category.id | translate }}</h3>
+            <hr>
+        </div>
+        <div class="box-wrapper">
+            <ng-container *ngFor="let item of category.items; trackB" >
+                <ng-container 
+                    [ngTemplateOutlet]="category.detail ? detailItem : minimalItem"
+                    [ngTemplateOutletContext]="{item, id: item.id}">
+                </ng-container>
             </ng-container>
-        </ng-container>
+        </div>
     </div>
 </ng-container>
 

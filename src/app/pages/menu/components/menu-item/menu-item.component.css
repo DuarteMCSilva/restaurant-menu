@@ -5,10 +5,11 @@
     flex-direction: column;
 }
 
+.category-wrapper {
+    margin: 20px;
+}
+
 .category-header {
-    margin: 0 70px;
-    padding: 20px;
-    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -27,7 +28,6 @@ hr {
     align-content: center;
     gap: 2vh 3vh;
     max-width: 1250px;
-    padding: 20px;
 }
 
 .item {
@@ -62,7 +62,7 @@ img.picture {
 }
 
 .menu-item-name {
-    font-size:  clamp(12px, 1.6vw, 20px);
+    font-size:  clamp(18px, 1.7vw, 22px);
     font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ img.picture {
     display: flex;
     align-items: center;
     font-weight: 800;
-    font-size:  clamp(12px, 1.6vw, 20px);
+    font-size:  clamp(18px, 1.7vw, 22px);
     margin: 5px;
 }
 

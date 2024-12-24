@@ -10,7 +10,6 @@
         <h1>{{ "restaurant-name" | translate }}</h1>
         <hr>
     </div>
-    <p [ngClass]="{'hidden': !!selectedFamily}"> {{ "pick-category" | translate }} </p>
     <div class="box-wrapper">
         <ng-container *ngFor="let productFamily of productFamilies$ | async">
             <div class="box" (click)="selectCategory(productFamily.id)"
@@ -21,13 +20,16 @@
                     [src]="productFamily.img"
                     width="100%"
                     />
-                <div class="category"> <p style="color: var(--color-orange-brown-100)"> {{ productFamily.id | translate }} </p></div>
+                <div class="category"> <p style="color: var(--color-orange-brown-100)" lang="pt"> {{ productFamily.id | translate }} </p></div>
             </div>
         </ng-container>
     </div>
-  </div>
-<ng-container *ngIf="selectedFamily?.categories as categories">
-    <app-menu-item 
-        [categories]="categories">
-    </app-menu-item>
-</ng-container>
+    <p [ngClass]="{'hidden': !!selectedFamily}"> {{ "pick-category" | translate }} </p>
+    <ng-container *ngIf="selectedFamily?.categories as categories">
+        <div style="margin: 0 20px">
+            <app-menu-item 
+                [categories]="categories">
+            </app-menu-item>
+        </div>
+    </ng-container>
+</div>
