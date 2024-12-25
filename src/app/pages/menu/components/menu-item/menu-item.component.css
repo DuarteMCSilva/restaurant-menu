@@ -41,7 +41,7 @@ hr {
     justify-content: space-between;
     overflow: hidden;
     position: relative;
-    border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 6px var(--border-color);
     gap: 15px;
     background-color: var(--card-color);
 }
