@@ -62,7 +62,7 @@
                         {
                             "id": "strogonoff",
                             "img": "",
-                            "price": 11.50,
+                            "price": 12.50,
                             "indisp": false
                         },
                         {
@@ -136,17 +136,17 @@
                     "detail": false,
                     "items": [
                         {
-                            "id": "strogonoff",
+                            "id": "frango-peito",
                             "img": "",
-                            "price": 3.50
+                            "price": 7.00
                         },
                         {
                             "id": "douradinhos",
-                            "price": 3.50
+                            "price": 7.00
                         },
                         {
                             "id": "hamburguer",
-                            "price": 3.50
+                            "price": 8.00
                         }
                     ]
                 }
@@ -255,7 +255,7 @@
                         },
                         {
                             "id": "nestea",
-                            "price": 2.10
+                            "price": 2.20
                         }
                     ]
                 },
@@ -274,6 +274,15 @@
                         {
                             "id": "limonada",
                             "price": 2.20
+                        }
+                    ]
+                },
+                {
+                    "id": "bebidas-extra",
+                    "items": [
+                        {
+                            "id": "gelo",
+                            "price": 0.10
                         }
                     ]
                 }
@@ -326,57 +335,46 @@
                     "items": [
                         {
                             "id": "borba-pq",
-                            "img": "https://www.primedrinks.pt/media/11683/logo.jpg",
                             "price": 6.00
                         },
                         {
                             "id": "borba",
-                            "img": "https://www.auchan.pt/dw/image/v2/BFRC_PRD/on/demandware.static/-/Sites-auchan-pt-master-catalog/default/dw806e92d3/images/hi-res/000022493_f5591bc6-a9d1-4b1e-936a-52b81c8a47cb.jpg",
                             "price": 9.50
                         },
                         {
                             "id": "caiado-pq",
-                            "img": "https://www.primedrinks.pt/media/11683/logo.jpg",
                             "price": 9.00
                         },
                         {
                             "id": "caiado",
-                            "img": "https://www.auchan.pt/dw/image/v2/BFRC_PRD/on/demandware.static/-/Sites-auchan-pt-master-catalog/default/dw806e92d3/images/hi-res/000022493_f5591bc6-a9d1-4b1e-936a-52b81c8a47cb.jpg",
                             "price": 12.50
                         },
                         {
                             "id": "monte-velho",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 12.50
                         },
                         {
                             "id": "monte-perdigoes",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 13.00
                         },
                         {
                             "id": "marques-borba",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 14.00
                         },
                         {
                             "id": "ea-reserva",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 17.00
                         },
                         {
                             "id": "trinca-bolotas",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 17.00
                         },
                         {
                             "id": "vale-parra",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 18.50
                         },
                         {
                             "id": "papa-figos",
-                            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStJ0NIIv1kyG5ZMFZ5uZPWFuK7N4dD00j3mA&s",
                             "price": 17.00
                         }
                     ]
@@ -390,17 +388,14 @@
                         },
                         {
                             "id": "borba",
-                            "img": "https://www.auchan.pt/dw/image/v2/BFRC_PRD/on/demandware.static/-/Sites-auchan-pt-master-catalog/default/dw806e92d3/images/hi-res/000022493_f5591bc6-a9d1-4b1e-936a-52b81c8a47cb.jpg",
                             "price": 9.50
                         },
                         {
                             "id": "caiado-pq",
-                            "img": "https://www.primedrinks.pt/media/11683/logo.jpg",
                             "price": 9.00
                         },
                         {
                             "id": "caiado",
-                            "img": "https://www.auchan.pt/dw/image/v2/BFRC_PRD/on/demandware.static/-/Sites-auchan-pt-master-catalog/default/dw806e92d3/images/hi-res/000022493_f5591bc6-a9d1-4b1e-936a-52b81c8a47cb.jpg",
                             "price": 12.50
                         },
                         {
