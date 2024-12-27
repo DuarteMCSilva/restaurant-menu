@@ -1,0 +1,10 @@
+<div class="lang-wrapper">
+    <ng-container
+        *ngFor="let lang of translateService.getLangs()">
+        <img 
+            class="flag"
+            (click)="changeLang(lang)" 
+            [src]="'assets/icons/flags/flag-'+lang+'.svg'" 
+            [alt]="lang">
+    </ng-container>
+</div>

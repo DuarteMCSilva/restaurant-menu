@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { OptionalFieldTranslatePipe } from './pipes/app-translate.pipe';
+import { LangPickerComponent } from './components/lang-picker/lang-picker.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -27,7 +28,8 @@ const routes: Routes = [
     AppComponent,
     MenuComponent,
     MenuItemComponent,
-    OptionalFieldTranslatePipe
+    OptionalFieldTranslatePipe,
+    LangPickerComponent
   ],
   imports: [
     BrowserModule,

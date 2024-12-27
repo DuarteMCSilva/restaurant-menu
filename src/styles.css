@@ -10,10 +10,10 @@ body {
     --color-grey-50: hsl(265, 55%, 96%);
     --color-grey-100: hsl(265, 19%, 88%);
     --color-grey-200: hsl(265, 7%, 70%);
-    --color-grey-300: hsl(265, 6%, 66%);
+    --color-grey-300: #a7a3ae;
     --color-grey-400: hsl(265, 4%, 57%);
     --color-grey-500: hsl(265, 3%, 53%);
-    --color-grey-600: hsl(265, 4%, 42%);
+    --color-grey-600: #6a676f;
     --color-grey-700: hsl(265, 4%, 31%);
     --color-grey-800: hsl(276, 5%, 20%);
     --color-grey-900: hsl(280, 5%, 13%);

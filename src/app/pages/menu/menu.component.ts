@@ -45,8 +45,4 @@ export class MenuComponent implements OnInit {
 
       this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
   }
-
-  changeLang(lang: string) {
-      this.translateService.use(lang);
-  }
 }

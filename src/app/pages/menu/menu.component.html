@@ -1,14 +1,12 @@
-<div class="language">
-    <img class="flag"
-        *ngFor="let lang of translateService.getLangs()" 
-        (click)="changeLang(lang)" 
-        [src]="'assets/icons/flags/flag-'+lang+'.svg'" 
-        [alt]="lang">
-</div>
 <div class="page-content">
     <div class="title">
         <h1>{{ "restaurant-name" | translate }}</h1>
         <hr>
+    </div>
+    <div class="cover-photo">
+        <img 
+            src="assets/images/capa/fachada.jpg" 
+            alt="">
     </div>
     <div class="box-wrapper">
         <ng-container *ngFor="let productFamily of productFamilies$ | async">
