@@ -136,13 +136,13 @@
                     "detail": false,
                     "items": [
                         {
-                            "id": "frango-peito",
-                            "img": "",
+                            "id": "douradinhos",
                             "price": 7.00
                         },
                         {
-                            "id": "douradinhos",
-                            "price": 7.00
+                            "id": "frango-peito",
+                            "img": "",
+                            "price": 8.50
                         },
                         {
                             "id": "hamburguer",
