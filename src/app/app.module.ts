@@ -11,6 +11,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { OptionalFieldTranslatePipe } from './pipes/app-translate.pipe';
 import { LangPickerComponent } from './components/lang-picker/lang-picker.component';
+import { ReservationsComponent } from './pages/reservations/reservations.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -20,6 +21,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 const routes: Routes = [
   { path: '', component: MenuComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'reservations', component: ReservationsComponent },
   { path: '**', component: MenuComponent }
 ]
 
@@ -29,7 +31,8 @@ const routes: Routes = [
     MenuComponent,
     MenuItemComponent,
     OptionalFieldTranslatePipe,
-    LangPickerComponent
+    LangPickerComponent,
+    ReservationsComponent
   ],
   imports: [
     BrowserModule,

@@ -68,3 +68,13 @@ hr {
 .hidden {
     display: none;
 }
+
+.page-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
