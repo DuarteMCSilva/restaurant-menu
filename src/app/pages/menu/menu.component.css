@@ -32,8 +32,9 @@
 
 .cover-photo > img {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: auto;
+    min-height: 100%;
     object-fit: cover;
     object-position: top;
     transition: all 0.3s ease;
