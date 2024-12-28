@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { MenuItemComponent } from './pages/menu/components/menu-item/menu-item.component';
@@ -25,29 +25,22 @@ const routes: Routes = [
   { path: '**', component: MenuComponent }
 ]
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    MenuItemComponent,
-    OptionalFieldTranslatePipe,
-    LangPickerComponent,
-    ReservationsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    RouterModule.forRoot(routes),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        MenuComponent,
+        MenuItemComponent,
+        OptionalFieldTranslatePipe,
+        LangPickerComponent,
+        ReservationsComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        RouterModule.forRoot(routes),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
