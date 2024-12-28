@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-lang-picker',
-  templateUrl: './lang-picker.component.html',
-  styleUrls: ['./lang-picker.component.css']
+    selector: 'app-lang-picker',
+    templateUrl: './lang-picker.component.html',
+    styleUrls: ['./lang-picker.component.css'],
+    standalone: false
 })
 export class LangPickerComponent implements OnInit {
 

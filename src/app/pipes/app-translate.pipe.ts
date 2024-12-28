@@ -2,7 +2,8 @@ import { ChangeDetectorRef, Pipe } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Pipe({
-  name: 'optTranslate'
+    name: 'optTranslate',
+    standalone: false
 })
 export class OptionalFieldTranslatePipe extends TranslatePipe {
 

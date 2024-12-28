@@ -14,9 +14,10 @@ export interface Item {
 }
 
 @Component({
-  selector: 'app-menu-item',
-  templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.css']
+    selector: 'app-menu-item',
+    templateUrl: './menu-item.component.html',
+    styleUrls: ['./menu-item.component.css'],
+    standalone: false
 })
 export class MenuItemComponent implements OnInit, OnChanges {
 
