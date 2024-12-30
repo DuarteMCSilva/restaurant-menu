@@ -1,0 +1,19 @@
+<p>Escolha um horário:</p>
+
+
+<div>
+    <div *ngFor="let scheduleKey of shifts()">
+        <h3> {{ scheduleKey | translate }} </h3>
+        <div class="chip-container">
+            <button 
+                class="chip-button"
+                *ngFor="let timeOption of schedule[scheduleKey]"
+                (click)="onSelection(timeOption)"
+                >
+                <p-chip>
+                    {{ timeOption | timeFormat }}
+                </p-chip>
+            </button>
+        </div>
+    </div>
+</div>

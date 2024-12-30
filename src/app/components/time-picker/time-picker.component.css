@@ -1,0 +1,37 @@
+:host {
+    --chips-gap: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+button:hover p-chip {
+    background-color: #e0e0e0;
+  }
+  
+button:active p-chip {
+    background-color: #d0d0d0;
+}
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--chips-gap);
+    justify-content: space-evenly;
+    padding: 10px;
+}
+  
+.chip-button {
+    flex: 1 1 calc(33.33% - var(--chips-gap));
+    max-width: 100px;
+    box-sizing: border-box; /* Ensures proper sizing */
+
+    p-chip {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
