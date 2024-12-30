@@ -1,0 +1,14 @@
+<div>
+    <h3> {{ 'Escolha o número de pessoas' | translate }} </h3>
+    <div class="chip-container">
+        <button 
+            class="chip-button"
+            *ngFor="let numberOption of numbers"
+            (click)="onSelection(numberOption)"
+            >
+            <p-chip>
+                {{ numberOption }}
+            </p-chip>
+        </button>
+    </div>
+</div>
