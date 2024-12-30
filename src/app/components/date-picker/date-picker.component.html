@@ -1,0 +1,20 @@
+<div>
+    <h3>Escolha uma data: </h3>
+    <mat-calendar
+        (selectedChange)="onSelected($event)"
+        [(selected)]="selected"
+        [dateFilter]="dateFilter"
+        [headerComponent]="calendarHeaderComponent"
+        [minDate]="CURRENT_DATE"
+        [maxDate]="max_date"
+        >
+    </mat-calendar>
+</div>
+
+
+<p> Selected date: {{ selected() | dateFormat }} </p>
+
+<ng-template
+    #calendarHeader>
+    <div> AAAAAAH!</div>
+</ng-template>
