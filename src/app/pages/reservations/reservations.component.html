@@ -1,9 +1,41 @@
-<form id="emailForm" onsubmit="onSubmit()">
-    <label for="toEmail">To Email:</label>
-    <input type="email" id="toEmail" name="toEmail" required>
-    <label for="subject">Subject:</label>
-    <input type="text" id="subject" name="subject" required>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    <button type="submit">Send Email</button>
-</form>
+<p-inputgroup>
+
+    <p-stepper [value]="1" >
+        <p-step-list>
+            <p-step [value]="1">Header I</p-step>
+            <p-step [value]="2">Header II</p-step>
+            <p-step [value]="3">Header II</p-step>
+        </p-step-list>
+    </p-stepper>
+    <div>
+        <p-inputgroup-addon>
+            <i class="pi pi-user"></i>
+        </p-inputgroup-addon>
+        <input pInputText placeholder="Username" />
+    </div>
+    <div>
+        <p-inputgroup-addon>
+            <i class="pi pi-map"></i>
+        </p-inputgroup-addon>
+        <p-select [(ngModel)]="selectedCity" [options]="cities" optionLabel="name" placeholder="City" />
+    </div>
+    <div>
+        <mat-card class="demo-inline-calendar-card" style="width: 100%;">
+            <app-date-picker
+                *ngIf="formComponent === 0"
+                (dateSelected)="onDateSelected($event)"
+            ></app-date-picker>
+            <app-time-picker
+                *ngIf="formComponent === 1"
+                [schedule]="schedule"
+                (timeSelected)="onTimeSelected($event)"
+                >
+            </app-time-picker>
+            <app-num-picker
+                *ngIf="formComponent === 2"
+                (numberSelected)="onNumberSelected($event)"
+                >
+            </app-num-picker>
+        </mat-card>
+    </div>
+</p-inputgroup>

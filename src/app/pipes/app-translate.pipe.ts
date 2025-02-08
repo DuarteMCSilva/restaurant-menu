@@ -3,7 +3,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Pipe({
     name: 'optTranslate',
-    standalone: false
+    standalone: true
 })
 export class OptionalFieldTranslatePipe extends TranslatePipe {
 

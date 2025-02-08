@@ -1,0 +1,23 @@
+<div class="custom-header">
+    <button
+        type="button"
+        (click)="previousClicked()"
+        [disabled]="!previousEnabled()">
+        <div
+            class="pi pi-chevron-left" 
+            style="font-size: 1rem;"
+            >
+        </div>
+    </button>
+    <button 
+        type="button"
+        (click)="nextClicked()"
+        [disabled]="!nextEnabled()"
+        >
+        <div
+            class="pi pi-chevron-right" 
+            style="font-size: 1rem;"
+            >
+        </div>
+    </button>
+</div>
