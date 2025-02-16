@@ -1,0 +1,17 @@
+button {
+  all: unset;
+}
+
+button:disabled {
+  color: gray;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}

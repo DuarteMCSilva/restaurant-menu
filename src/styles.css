@@ -1,3 +1,5 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import "primeicons/primeicons.css";
 body {
     --background-color: var(--color-orange-200);
     --text-color: var(--color-orange-brown-300);
@@ -74,7 +76,21 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
     padding: 20px;
     width: 100%;
     max-width: 1000px;
+}
+
+.p-inputgroup {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-calendar-body-cell.mat-calendar-body-disabled {
+    cursor: default;
 }

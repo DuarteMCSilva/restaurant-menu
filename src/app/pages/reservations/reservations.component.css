@@ -1,0 +1,14 @@
+p-inputGroup {
+    display: flex;
+    align-items: center;
+}
+
+p-inputGroup div {
+    display: inline-flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+p-inputGroupAddon {
+    width: 35px;
+}

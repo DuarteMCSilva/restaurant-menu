@@ -14,7 +14,7 @@ export class NumPickerComponent {
 
   @Output() readonly numberSelected: EventEmitter<number> = new EventEmitter<number>();
 
-  numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ];
 
   onSelection(selected: number) {
     this.numberSelected.emit(selected);
