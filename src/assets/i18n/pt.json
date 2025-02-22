@@ -140,5 +140,16 @@
     "cafe-duplo": "Café duplo",
     "cafe-leite": "Café c/ leite",
     "garoto": "Garoto",
-    "carioca": "Carioca"
+    "carioca": "Carioca",
+    "almoço": "Almoço",
+    "jantar": "Jantar",
+    "reservations": {
+        "date": "Data",
+        "time": "Hora",
+        "number": "Pessoas",
+        "user": "Contacto",
+        "date-message": "Por favor, selecione uma data",
+        "number-message": "Por favor, selecione o número de pessoas",
+        "time-message": "Por favor, selecione um horário"
+    }
 }

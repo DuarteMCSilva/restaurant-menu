@@ -9,18 +9,3 @@
         </a>
     </ng-template>
 </p-breadcrumb>
-
-<!-- <nav class="breadcrumb">
-    <ol class="breadcrumb-list">
-        <li *ngFor="let item of items">
-            <a class="item p-breadcrumb-item-link"
-                [ngClass]="{'value': !!item.value, 'selected': item.label === selectedLabel }"
-                (click)="onItemClick(item.label!)">
-            <div [class]="item.icon"></div>
-            <div *ngIf="!item.value" class="label hidden-sm">{{ ("reservations." + item.label) | translate }}</div>
-            <div *ngIf="item.value">{{ item.value | stringFormat: { format: item.format } }}</div>
-        </a>
-        </li>
-    </ol>
-</nav>
- -->

@@ -2,14 +2,14 @@ import { Component, EventEmitter, model, Output } from '@angular/core';
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CalendarHeaderComponent } from './calendar-header/calendar-header.component';
-import { DateFormatPipe } from 'src/app/pipes/string-format/string-types/date-format.pipe';
+import { StandaloneSharedModule } from '../standalone-shared-module';
 
 @Component({
   selector: 'app-date-picker',
   standalone: true,
-  imports: [MatDatepickerModule, CalendarHeaderComponent, DateFormatPipe],
+  imports: [MatDatepickerModule, CalendarHeaderComponent, StandaloneSharedModule],
   templateUrl: './date-picker.component.html',
-  styleUrl: './date-picker.component.css'
+  styleUrl: './date-picker.component.scss'
 })
 export class DatePickerComponent {
 
@@ -52,7 +52,7 @@ export class DatePickerComponent {
 
   private setMaxDate() {
     const max_date = new Date(this.CURRENT_DATE);
-    max_date.setMonth( max_date.getMonth() + 2)
+    max_date.setMonth( max_date.getMonth() + 1)
     return max_date;
   }
 

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatCalendar, MatCalendarHeader } from '@angular/material/datepicker';
 
 @Component({
@@ -11,7 +11,14 @@ import { MatCalendar, MatCalendarHeader } from '@angular/material/datepicker';
 })
 export class CalendarHeaderComponent extends MatCalendarHeader<Date> {
 
-  constructor(override calendar: MatCalendar<Date>) {
+  @Input() monthOnDisplay: string = '';
+
+  calendarHeader = new MatCalendarHeader()
+
+  constructor(
+    override calendar: MatCalendar<Date>
+  
+  ) {
     super(calendar);
   }
 }
