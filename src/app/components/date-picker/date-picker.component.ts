@@ -2,7 +2,7 @@ import { Component, EventEmitter, model, Output } from '@angular/core';
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CalendarHeaderComponent } from './calendar-header/calendar-header.component';
-import { DateFormatPipe } from 'src/app/pipes/date-format.pipe';
+import { DateFormatPipe } from 'src/app/pipes/string-format/string-types/date-format.pipe';
 
 @Component({
   selector: 'app-date-picker',

@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DateFormatPipe implements PipeTransform {
 
-  transform(date: Date | null, ...args: unknown[]): unknown {
-    if(!date) return null;
+  transform(date: Date | null, ...args: unknown[]): string {
+    if(!date) return '';
 
     const formattedDate = new Intl.DateTimeFormat('pt-PT').format(date);
     return formattedDate;

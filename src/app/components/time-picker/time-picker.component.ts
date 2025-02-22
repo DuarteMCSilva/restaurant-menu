@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, signal } from '@angular/core';
 import { ChipModule } from 'primeng/chip';
-import { TimeFormatPipe } from 'src/app/pipes/time-format.pipe';
+import { TimeFormatPipe } from 'src/app/pipes/string-format/string-types/time-format.pipe';
 import { TranslateModule } from '@ngx-translate/core'; 
 
 @Component({
