@@ -139,5 +139,11 @@
     "cafe-duplo": "Café Doble",
     "cafe-leite": "Café con Leche",
     "garoto": "Garoto",
-    "carioca": "Carioca"
+    "carioca": "Carioca",
+    "reservations": {
+        "date": "Data",
+        "time": "Hora",
+        "number": "Pessoas",
+        "user": "Contacto"
+    }
 }

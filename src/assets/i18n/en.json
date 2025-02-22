@@ -139,5 +139,11 @@
     "cafe-duplo": "Double Coffee",
     "cafe-leite": "Coffee with Milk",
     "garoto": "Garoto",
-    "carioca": "Carioca"
+    "carioca": "Carioca",
+    "reservations": {
+        "date": "Date",
+        "time": "Time",
+        "number": "People",
+        "user": "Contact"
+    }
 }

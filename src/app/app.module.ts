@@ -33,6 +33,8 @@ import { DatePickerComponent } from './components/date-picker/date-picker.compon
 import { TimePickerComponent } from "./components/time-picker/time-picker.component";
 import { NumPickerComponent } from "./components/num-picker/num-picker.component";
 import { StepperModule } from 'primeng/stepper';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { StandaloneSharedModule } from './components/standalone-shared-module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -56,6 +58,7 @@ const appRoutes: Routes = [
   ],
   bootstrap: [AppComponent],
   imports: [
+    StandaloneSharedModule,
     BrowserModule,
     TranslateModule.forRoot({
         loader: {
@@ -82,9 +85,11 @@ const appRoutes: Routes = [
     MatCardModule,
     DatePickerComponent,
     TimePickerComponent,
-    OptionalFieldTranslatePipe,
     NumPickerComponent,
-    StepperModule
+    StepperModule,
+    BreadcrumbComponent,
+    OptionalFieldTranslatePipe
+
 ],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),

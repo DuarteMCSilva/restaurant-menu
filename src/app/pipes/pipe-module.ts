@@ -5,8 +5,12 @@ import { StringFormatPipe } from './string-format/string-format.pipe';
 
 
 @NgModule({
-  imports: [ DateFormatPipe, TimeFormatPipe, StringFormatPipe ],
-  providers: [ DateFormatPipe, TimeFormatPipe ],
-  exports: [ DateFormatPipe, TimeFormatPipe, StringFormatPipe ],
+    imports: [
+        DateFormatPipe,
+        TimeFormatPipe,
+        StringFormatPipe
+    ],
+    providers: [DateFormatPipe, TimeFormatPipe],
+    exports: [DateFormatPipe, TimeFormatPipe, StringFormatPipe],
 })
-export class PipeModule {}
+export class PipeModule { }

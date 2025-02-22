@@ -9,7 +9,7 @@ export class DateFormatPipe implements PipeTransform {
   transform(date: Date | null, ...args: unknown[]): string {
     if(!date) return '';
 
-    const formattedDate = new Intl.DateTimeFormat('pt-PT').format(date);
+    const formattedDate = new Intl.DateTimeFormat('pt-PT', { day: 'numeric', month: 'short' } ).format(date);
     return formattedDate;
   }
 }
