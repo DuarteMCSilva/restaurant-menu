@@ -1,10 +1,13 @@
 <div>
-    <span class="center">{{ 'reservations.time-message' | translate }} </span>
-    <div>
+    <span class="center text-neutral">{{ 'reservations.time-message' | translate }} </span>
+    <div class="form-container">
         <div *ngFor="let scheduleKey of shifts(); trackBy: trackByKey">
             <h3> {{ scheduleKey | translate }} </h3>
             <div class="chip-container">
-                <button class="chip-button" *ngFor="let timeOption of schedule[scheduleKey]; trackBy: trackByKey"
+                <button 
+                    *ngFor="let timeOption of schedule[scheduleKey]; trackBy: trackByKey"
+                    class="chip-button" 
+                    [ngClass]="{'selected': selected === timeOption}"
                     (click)="onSelection(timeOption)">
                     <p-chip>
                         {{ timeOption | timeFormat }}

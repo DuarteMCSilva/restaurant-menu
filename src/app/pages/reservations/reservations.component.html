@@ -1,3 +1,4 @@
+<h1> {{  'reservations.title' | translate }} </h1>
 <p-inputgroup>
     <div>
         <mat-card class="app-card" style="width: 100%">
@@ -10,16 +11,19 @@
             <app-date-picker
                 *ngIf="formComponent === 0"
                 (dateSelected)="onDateSelected($event)"
+                [selected]="reservation.date"
             ></app-date-picker>
             <app-time-picker
                 *ngIf="formComponent === 1"
                 [schedule]="schedule"
                 (timeSelected)="onTimeSelected($event)"
+                [selected]="reservation.time"
                 >
             </app-time-picker>
             <app-num-picker
                 *ngIf="formComponent === 2"
                 (numberSelected)="onNumberSelected($event)"
+                [selected]="reservation.people"
                 >
             </app-num-picker>
             <div *ngIf="formComponent === 3">

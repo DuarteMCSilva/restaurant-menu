@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { ChipModule } from 'primeng/chip';
 
@@ -13,6 +13,8 @@ import { ChipModule } from 'primeng/chip';
 export class NumPickerComponent {
 
   @Output() readonly numberSelected: EventEmitter<number> = new EventEmitter<number>();
+
+  @Input() selected?: number;
 
   numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ];
 

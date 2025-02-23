@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, signal } from '@angular/core';
 import { ChipModule } from 'primeng/chip';
-import { TimeFormatPipe } from 'src/app/pipes/string-format/string-types/time-format.pipe';
 import { TranslateModule } from '@ngx-translate/core'; 
+import { StandaloneSharedModule } from '../standalone-shared-module';
 
 @Component({
   selector: 'app-time-picker',
-  imports: [CommonModule, TranslateModule,  ChipModule, TimeFormatPipe],
+  imports: [CommonModule, TranslateModule,  ChipModule, StandaloneSharedModule],
   standalone: true,
   templateUrl: './time-picker.component.html',
   styleUrl: './time-picker.component.css'
@@ -16,6 +16,8 @@ export class TimePickerComponent implements OnChanges {
   @Input() schedule!: {
     [key: string] : number[]
   };
+
+  @Input() selected?: number;
 
   @Output() readonly timeSelected: EventEmitter<number> = new EventEmitter<number>();
 

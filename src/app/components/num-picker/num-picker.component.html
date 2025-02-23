@@ -1,9 +1,10 @@
 <div>
-    <span class="center">{{ 'reservations.number-message' | translate }} </span>
+    <span class="center text-neutral">{{ 'reservations.number-message' | translate }} </span>
     <div class="chip-container">
         <button 
             class="chip-button"
             *ngFor="let numberOption of numbers; trackBy: trackByNumber"
+            [ngClass]="{'selected': selected === numberOption}"
             (click)="onSelection(numberOption)"
             >
             <p-chip>
