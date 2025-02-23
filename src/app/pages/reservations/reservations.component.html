@@ -1,26 +1,12 @@
 <p-inputgroup>
-
-    <p-stepper [value]="1" >
-        <p-step-list>
-            <p-step [value]="1">Header I</p-step>
-            <p-step [value]="2">Header II</p-step>
-            <p-step [value]="3">Header II</p-step>
-        </p-step-list>
-    </p-stepper>
     <div>
-        <p-inputgroup-addon>
-            <i class="pi pi-user"></i>
-        </p-inputgroup-addon>
-        <input pInputText placeholder="Username" />
-    </div>
-    <div>
-        <p-inputgroup-addon>
-            <i class="pi pi-map"></i>
-        </p-inputgroup-addon>
-        <p-select [(ngModel)]="selectedCity" [options]="cities" optionLabel="name" placeholder="City" />
-    </div>
-    <div>
-        <mat-card class="demo-inline-calendar-card" style="width: 100%;">
+        <mat-card class="app-card" style="width: 100%">
+            <app-breadcrumb
+                [items]="breadCrumbItems"
+                (onSelection)="onStageSelection($event)"
+                [selectedIndex]="formComponent"
+                >
+            </app-breadcrumb>
             <app-date-picker
                 *ngIf="formComponent === 0"
                 (dateSelected)="onDateSelected($event)"
@@ -36,6 +22,23 @@
                 (numberSelected)="onNumberSelected($event)"
                 >
             </app-num-picker>
+            <div *ngIf="formComponent === 3">
+                <div>
+                    <p-inputgroup-addon>
+                        <i class="pi pi-user"></i>
+                    </p-inputgroup-addon>
+                    <input pInputText placeholder="Username" />
+                </div>
+                <div>
+                    <p-inputgroup-addon>
+                        <i class="pi pi-map"></i>
+                    </p-inputgroup-addon>
+                    <p-select 
+                        [(ngModel)]="selectedCity" [options]="cities" 
+                        optionLabel="name" placeholder="City" 
+                    />
+                </div>
+            </div>
         </mat-card>
     </div>
 </p-inputgroup>

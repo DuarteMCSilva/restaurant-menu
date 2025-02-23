@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MenuItem } from "src/app/components/breadcrumb/breadcrumb.component";
 
 interface City {
   name: string;
@@ -25,6 +26,13 @@ export class ReservationsComponent implements OnInit {
     name: ''
   }
 
+  breadCrumbItems: MenuItem[] = [
+    { label: 'date', icon: 'pi pi-calendar', format: 'date'},
+    { label: 'time', icon: 'pi pi-clock', format: 'time' },
+    { label: 'number', icon: 'pi pi-hashtag', format: 'number' },
+    { label: 'user', icon: 'pi pi-user', format: 'none'}
+  ];
+
   formComponent = 0;
 
   number: string | undefined;
@@ -48,25 +56,46 @@ export class ReservationsComponent implements OnInit {
     console.log(event)
   }
 
+  onStageSelection(index: number) {
+    this.formComponent = index;
+  }
+
   onDateSelected(event: any) {
     this.reservation.date = event;
-    console.log(event);
+    
+    this.updateBreadcrumbItems('date', event);
     this.nextComponent();
   }
 
   onTimeSelected(event: any) {
     this.reservation.time = event;
-    console.log(event);
+
+    this.updateBreadcrumbItems('time', event);
     this.nextComponent()
   }
 
   onNumberSelected(event: any) {
     this.reservation.people = event;
-    console.log(event);
+
+    this.updateBreadcrumbItems('number', event);
     this.nextComponent()
   }
 
   nextComponent() {
     this.formComponent++;
+  }
+
+  private updateBreadcrumbItems(label: string, value: any) {
+    const dateItem = this.breadCrumbItems.find((item) => item.label === label );
+
+    if(!dateItem) return;
+
+    const dateItemIndex = this.breadCrumbItems.findIndex((item) => item.label === label );
+
+    const newBC: MenuItem[] = [...this.breadCrumbItems]
+    newBC[dateItemIndex] = {...dateItem, value}
+
+    this.breadCrumbItems = newBC;
+
   }
 }
