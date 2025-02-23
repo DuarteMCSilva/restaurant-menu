@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Category } from './components/menu-item/menu-item.component';
 import { TranslateService } from '@ngx-translate/core';
@@ -45,9 +45,19 @@ export class MenuComponent implements OnInit {
       }
 
       this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
+      this.scrollElementIntoView('menu-elements')
   }
 
   trackById(_index: number, item: ProductFamily) {
     return item.id;
+  }
+
+  private scrollElementIntoView(label: string) {
+    // Should wait for Change Detection, and conditional element (*ngIf) to render
+    // setTimeout does the trick.
+    setTimeout( () => {
+      const element = document.getElementById(label);
+      element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 0);
   }
 }

@@ -22,12 +22,12 @@
             </div>
         </ng-container>
     </div>
-    <p [ngClass]="{'hidden': !!selectedFamily}"> {{ "pick-category" | translate }} </p>
-    <ng-container *ngIf="selectedFamily?.categories as categories">
+    <span *ngIf="!selectedFamily" class="center"> {{ "pick-category" | translate }} </span>
+    <div id="menu-elements" *ngIf="selectedFamily?.categories as categories">
         <div style="margin: 0 20px">
             <app-menu-item 
                 [categories]="categories">
             </app-menu-item>
         </div>
-    </ng-container>
+    </div>
 </div>
