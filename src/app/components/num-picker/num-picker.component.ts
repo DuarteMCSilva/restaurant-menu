@@ -20,4 +20,8 @@ export class NumPickerComponent {
     this.numberSelected.emit(selected);
   }
 
+  trackByNumber(_index:number, value: number) {
+    return value;
+  }
+
 }

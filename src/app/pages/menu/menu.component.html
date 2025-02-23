@@ -9,7 +9,7 @@
             alt="cover-photo">
     </div>
     <div class="box-wrapper">
-        <ng-container *ngFor="let productFamily of productFamilies$ | async">
+        <ng-container *ngFor="let productFamily of productFamilies$ | async; trackBy: trackById">
             <div class="box" (click)="selectCategory(productFamily.id)"
                 [ngClass]="{
                     'not-selected': !!selectedFamily && (selectedFamily.id !== productFamily.id)

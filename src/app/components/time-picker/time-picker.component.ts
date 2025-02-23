@@ -35,4 +35,8 @@ export class TimePickerComponent implements OnChanges {
   onSelection(selected: number) {
     this.timeSelected.emit(selected);
   }
+
+  trackByKey(_index: number, key: any) {
+    return key
+  }
 }

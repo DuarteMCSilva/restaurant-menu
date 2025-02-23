@@ -17,4 +17,8 @@ export class LangPickerComponent implements OnInit {
   changeLang(lang: string) {
     this.translateService.use(lang);
   }
+
+  trackLang(_index: number, lang:string){
+    return lang;
+  }
 }

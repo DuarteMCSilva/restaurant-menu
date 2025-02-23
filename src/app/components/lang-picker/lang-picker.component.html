@@ -1,6 +1,6 @@
 <div class="lang-wrapper">
     <ng-container
-        *ngFor="let lang of translateService.getLangs()">
+        *ngFor="let lang of translateService.getLangs(); trackBy: trackLang">
         <img 
             class="flag"
             (click)="changeLang(lang)" 

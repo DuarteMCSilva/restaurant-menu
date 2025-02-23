@@ -7,7 +7,7 @@ import { StandaloneSharedModule } from '../standalone-shared-module';
 @Component({
   selector: 'app-date-picker',
   standalone: true,
-  imports: [MatDatepickerModule, CalendarHeaderComponent, StandaloneSharedModule],
+  imports: [MatDatepickerModule, StandaloneSharedModule],
   templateUrl: './date-picker.component.html',
   styleUrl: './date-picker.component.scss'
 })

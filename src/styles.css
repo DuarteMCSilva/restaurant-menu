@@ -94,3 +94,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-calendar-body-cell.mat-calendar-body-disabled {
     cursor: default;
 }
+
+.app-card {
+    background-color: var(--card-color);
+    box-shadow: 2px 2px 6px var(--border-color);
+    border-radius: var(--border-radius);
+}

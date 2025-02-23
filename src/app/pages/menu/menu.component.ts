@@ -46,4 +46,8 @@ export class MenuComponent implements OnInit {
 
       this.selectedFamily = this.productFamilies.find( ( category ) => category.id === categoryName);
   }
+
+  trackById(_index: number, item: ProductFamily) {
+    return item.id;
+  }
 }

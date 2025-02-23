@@ -36,6 +36,10 @@ export class MenuItemComponent implements OnInit, OnChanges {
     }
   }
 
+  trackById(_index: number, category: Category | Item) {
+    return category.id;
+  }
+
   private checkCategoryHasAvailableItems(category: Category){
     return category.items.some(( item ) => !item.indisp )
   }

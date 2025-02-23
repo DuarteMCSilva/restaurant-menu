@@ -3,7 +3,7 @@
     <div class="chip-container">
         <button 
             class="chip-button"
-            *ngFor="let numberOption of numbers"
+            *ngFor="let numberOption of numbers; trackBy: trackByNumber"
             (click)="onSelection(numberOption)"
             >
             <p-chip>
