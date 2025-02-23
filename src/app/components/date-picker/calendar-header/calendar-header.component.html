@@ -5,13 +5,13 @@
         [disabled]="!previousEnabled()">
         <div
             class="pi pi-chevron-left" 
-            style="font-size: 1rem;"
+            style="font-size: 1rem; color: var(--text-neutral)"
             >
         </div>
     </button>
-    <div>
+    <span>
         {{ calendarHeader.periodButtonText}}
-    </div>
+    </span>
     <button 
         type="button"
         (click)="nextClicked()"
@@ -19,7 +19,7 @@
         >
         <div
             class="pi pi-chevron-right" 
-            style="font-size: 1rem;"
+            style="font-size: 1rem; color: var(--text-neutral)"
             >
         </div>
     </button>

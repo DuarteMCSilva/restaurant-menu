@@ -1,6 +1,6 @@
 <div>
-    <span class="center">{{ 'reservations.time-message' | translate }} </span>
-    <div>
+    <span class="center text-neutral">{{ 'reservations.time-message' | translate }} </span>
+    <div class="form-container">
         <div *ngFor="let scheduleKey of shifts(); trackBy: trackByKey">
             <h3> {{ scheduleKey | translate }} </h3>
             <div class="chip-container">

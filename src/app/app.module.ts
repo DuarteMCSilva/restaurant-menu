@@ -89,7 +89,6 @@ const appRoutes: Routes = [
     StepperModule,
     BreadcrumbComponent,
     OptionalFieldTranslatePipe
-
 ],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),

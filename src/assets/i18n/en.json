@@ -141,9 +141,13 @@
     "garoto": "Garoto",
     "carioca": "Carioca",
     "reservations": {
+        "title": "Make a reservation",
         "date": "Date",
         "time": "Time",
         "number": "People",
-        "user": "Contact"
+        "user": "Contact",
+        "date-message": "Please, select a date",
+        "number-message": "Please, select the number of people",
+        "time-message": "Please, selecte a time"
     }
 }

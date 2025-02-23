@@ -16,12 +16,16 @@ button:active p-chip {
     background-color: #d0d0d0;
 }
 
+.form-container {
+    padding: 0 10px;
+}
+
 .chip-container {
     display: flex;
     flex-wrap: wrap;
     gap: var(--chips-gap);
     justify-content: space-evenly;
-    padding: 10px;
+    margin-bottom: 10px;
 }
   
 .chip-button {
