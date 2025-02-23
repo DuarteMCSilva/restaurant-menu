@@ -20,7 +20,7 @@ export class ReservationsComponent implements OnInit {
   }
 
   reservation = {
-    date: new Date(),
+    date: null,
     time: 0,
     people: 0,
     name: ''
