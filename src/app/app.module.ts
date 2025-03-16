@@ -36,6 +36,7 @@ import { StepperModule } from 'primeng/stepper';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { StandaloneSharedModule } from './components/standalone-shared-module';
 import { NavbarComponent } from './pages/layout/navbar/navbar.component';
+import { HeroComponent } from './pages/hero/hero.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -43,7 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 const appRoutes: Routes = [
-  { path: '', component: MenuComponent },
+  { path: '', component: HeroComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'reservations', component: ReservationsComponent },
   { path: '**', component: MenuComponent }
