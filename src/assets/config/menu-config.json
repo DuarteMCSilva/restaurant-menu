@@ -188,7 +188,7 @@
                         },
                         {
                             "id": "feijao",
-                            "price": 2.50
+                            "price": 3.50
                         },
                         {
                             "id": "batata-frita",
@@ -196,15 +196,15 @@
                         },
                         {
                             "id": "batata-murro",
-                            "price": 2.50
+                            "price": 3.50
                         },
                         {
                             "id": "legumes-salt",
-                            "price": 2.50
+                            "price": 5.50
                         },
                         {
                             "id": "legumes-coz",
-                            "price": 2.50
+                            "price": 4.50
                         }
                     ]
                 }
@@ -352,10 +352,6 @@
                         {
                             "id": "monte-velho",
                             "price": 12.50
-                        },
-                        {
-                            "id": "monte-perdigoes",
-                            "price": 13.00
                         },
                         {
                             "id": "marques-borba",
