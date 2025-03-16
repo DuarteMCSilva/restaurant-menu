@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,5 +9,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
+  constructor(private router: Router) { }
+
+  onClick() {
+    this.router.navigate(['/menu']);
+  }
 
 }

@@ -1,16 +1,14 @@
 <nav class="navbar navbar-light bg-custom">
     <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="/">
-            <img 
-              src="assets/images/cover/logo.jpg" 
-              style="height: 40px; width:40px; border-radius: 100%;">
-          </a>
+        <div class="navbar-header" (click)="onNavClick('/')">
+          <img 
+            src="assets/images/cover/logo.jpg" 
+            style="height: 40px; width:40px; border-radius: 100%;">
         </div>
         <div>
           <ul class="navbar-nav me-auto mb-lg-0 custom-ul">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/menu">{{ 'nav.menu' | translate }}</a>
+              <div class="nav-link" aria-current="page" (click)="onNavClick('/menu')" href="/menu">{{ 'nav.menu' | translate }}</div>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-current="page" href="#"> {{ 'nav.contact' | translate }}</a>

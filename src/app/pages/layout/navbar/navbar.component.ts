@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  constructor(private router: Router) { }
+
+  onNavClick(resource: string) {
+    this.router.navigate([resource]);
+  }
 }
