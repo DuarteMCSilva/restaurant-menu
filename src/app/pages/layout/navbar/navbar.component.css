@@ -5,3 +5,8 @@
         padding: 5px;
     }
 }
+
+.bg-custom {
+    background-color: var(--color-orange-200);
+    border-bottom: 1px solid var(--text-color);
+}
