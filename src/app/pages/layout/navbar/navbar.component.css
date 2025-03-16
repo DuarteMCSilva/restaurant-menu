@@ -1,0 +1,7 @@
+.custom-ul {
+    flex-direction: row;
+
+    li {
+        padding: 5px;
+    }
+}

@@ -35,6 +35,7 @@ import { NumPickerComponent } from "./components/num-picker/num-picker.component
 import { StepperModule } from 'primeng/stepper';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { StandaloneSharedModule } from './components/standalone-shared-module';
+import { NavbarComponent } from './pages/layout/navbar/navbar.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -53,6 +54,7 @@ const appRoutes: Routes = [
     AppComponent,
     MenuComponent,
     MenuItemComponent,
+    NavbarComponent,
     LangPickerComponent,
     ReservationsComponent
   ],

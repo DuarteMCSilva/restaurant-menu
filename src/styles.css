@@ -57,12 +57,12 @@ body {
 }
 
 
-h1, h3, p , span,
+h1, h2, h3, p , span,
 span.mat-calendar-body-cell-content,
 td.mat-calendar-body-label,
 .chip-button > .p-chip {
     color: var(--text-color);
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif !important;
 }
 
 span.mat-calendar-body-selected,
@@ -90,6 +90,7 @@ hr {
     border: none; 
     height: 2px; 
     background-color: var(--color-orange-brown-400);
+    margin: 0 0 1rem 0;
 }
 
 .hidden {

@@ -16,3 +16,7 @@ img.flag {
     height: auto;
     margin: 10px;
 }
+
+.dropdown-menu {
+    min-width: unset;
+}

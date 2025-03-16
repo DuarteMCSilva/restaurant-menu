@@ -16,6 +16,10 @@
     align-self: flex-end;
 }
 
+.category-name {
+    margin: 0;
+}
+
 hr {
     width: 100%;
 }
@@ -60,7 +64,6 @@ img.picture {
 
 .menu-item-name {
     font-size:  clamp(18px, 1.7vw, 22px);
-    font-weight: bold;
 }
 
 .menu-item-price {

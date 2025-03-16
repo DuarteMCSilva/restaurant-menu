@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -9,12 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LangPickerComponent implements OnInit {
 
+  @Input() inline = false;
+  currLang = 'pt';
+
   constructor(public translateService: TranslateService) { }
 
   ngOnInit(): void {
+    this.currLang = this.translateService.currentLang;
   }
 
   changeLang(lang: string) {
+    this.currLang = lang;
     this.translateService.use(lang);
   }
 

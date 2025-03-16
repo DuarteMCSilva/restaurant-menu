@@ -1,4 +1,8 @@
 {
+    "nav": {
+        "menu": "Menu",
+        "contact": "Contactos"
+    },
     "restaurant-name": "Alfredo dos Frangos",
     "pick-category": "Por favor, selecione uma categoria.",
     "couvert": "Couvert",

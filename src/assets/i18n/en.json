@@ -1,4 +1,8 @@
 {
+    "nav": {
+        "menu": "Menu",
+        "contact": "Contact"
+    },
     "pick-category": "Please select a category.",
     "couvert": "Appetizers",
     "sobremesas": "Desserts",
