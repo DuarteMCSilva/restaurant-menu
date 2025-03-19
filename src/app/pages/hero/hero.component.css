@@ -35,20 +35,33 @@ img {
     opacity: 0.9;
 }
 
-.trigger{
-    position: absolute;
-    top: 85%;
-    z-index: 2;
-    font-size: 36px;
-    width: 100%;
+.welcome-text {
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    padding: 4px 15px;
     color: var(--color-orange-200);
-    text-align: center;
-
     span {
         color: var(--color-orange-200);
     }
 }
 
-.trigger:hover {
+.background-fade {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0) 74%);
+}
+
+.position{
+    position: absolute;
+    top: 60%;
+    justify-self: anchor-center;
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.position.up {
+    top: 40%;
+}
+
+.position:hover {
     transform: translateY(-2px);
 }

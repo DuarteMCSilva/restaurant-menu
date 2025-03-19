@@ -1,10 +1,11 @@
-<h1 class="text-center"> {{ 'welcome' | translate }}</h1>
-<div class="cover-photo" (click)="onClick()">
-    <img 
-        src="assets/images/cover/fachada-style.jpg"
-        alt="cover-photo">
-    <div class="trigger">
-        <span>{{'nav.menu' | translate}}</span>
-        <i class="bi bi-chevron-double-right"></i>
+<div class="hero-image">
+    <div class="page-content">
+        <div class="position up"(click)="onClick()">
+            <h1 class="center welcome-text mb-5 background-fade">{{ 'welcome' | translate }}</h1>
+        </div>
+        <div class="position welcome-text background-fade"(click)="onClick()">
+            <span>{{'nav.menu' | translate}}</span>
+            <i class="bi bi-chevron-double-right"></i>
+        </div>
     </div>
 </div>

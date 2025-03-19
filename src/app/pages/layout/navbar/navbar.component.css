@@ -1,3 +1,9 @@
+:host {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
 .custom-ul {
     flex-direction: row;
 
