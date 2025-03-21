@@ -12,7 +12,7 @@
             <li
                 *ngFor="let lang of translateService.getLangs(); trackBy: trackLang">
                 <img 
-                    class="flag"
+                    class="flag clickable"
                     (click)="changeLang(lang)" 
                     [src]="'assets/icons/flags/flag-'+lang+'.svg'" 
                     [alt]="lang">
