@@ -1,0 +1,9 @@
+.footer {
+    background-color: var(--border-color);
+    color: var(--background-color);
+    height: 100%;
+
+    span, a {
+        color: var(--background-color);
+    }
+}

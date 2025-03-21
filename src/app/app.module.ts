@@ -37,6 +37,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { StandaloneSharedModule } from './components/standalone-shared-module';
 import { NavbarComponent } from './pages/layout/navbar/navbar.component';
 import { HeroComponent } from './pages/hero/hero.component';
+import { FooterComponent } from "./pages/layout/footer/footer.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -91,7 +92,8 @@ const appRoutes: Routes = [
     NumPickerComponent,
     StepperModule,
     BreadcrumbComponent,
-    OptionalFieldTranslatePipe
+    OptionalFieldTranslatePipe,
+    FooterComponent
 ],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
