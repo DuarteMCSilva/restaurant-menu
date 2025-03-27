@@ -51,6 +51,12 @@ body {
 
 }
 
+.layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
 #body {
     background-color: var(--background-color)  !important ;
     height: 100%;
@@ -130,7 +136,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     max-width: 1000px;
     opacity: 1;
@@ -157,4 +163,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .selected > p-chip.p-chip {
     box-shadow: 2px 2px 6px var(--border-color);
+}
+
+.clickable:not(.disabled) {
+    cursor: pointer;
 }
