@@ -1,8 +1,13 @@
 {
+    "welcome": "Bienvenu",
+    "nav": {
+        "menu": "Menu",
+        "contact": "Contact"
+    },
     "pick-category": "Choisissez une catégorie",
     "couvert": "Couvert",
     "sobremesas": "Desserts",
-    "pao": "Panier de Pain",
+    "pao": "Pain",
     "manteiga": "Beurre",
     "pate-sardinha": "Pâté de Sardines",
     "pate-atum": "Pâté de Thon",
@@ -124,7 +129,7 @@
     "pudim.desc": "Recette régionale",
     "misto-alg": "Mélange Algarvien",
     "misto-alg.desc": "Tarte du trio : amande, figue et caroube",
-    "tarte-amendoa": "Dessert de Mamie",
+    "tarte-amendoa": "Tarte aux amandes",
     "tarte-amendoa.desc": "Tarte aux amandes",
     "tarte-alfarroba": "Tarte à la Caroube",
     "tarte-alfarroba.desc": "Tarte à la caroube, avec confiture de citron",
